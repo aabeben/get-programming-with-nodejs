@@ -12,7 +12,10 @@ Hak cipta kode milik penerbit buku dengan informasi sebagai berikut:
 2. Install Nodejs di perangkat anda untuk caranya silahkan rujuk di mesin pencarian semisal duckduckgo.com, google.com atau bing.com
 3. Masuk ke dalam direktori di mana anda meletakkan unduhan anda ```cd /sembarang/get-programming-with-nodejs ```
 4. Jalankan dengan perintah ```node . ```
+
 Perintah di atas dengan asumsi anda menggunakan Linux bukan Windows. Kalaupun harus menggunakan Windows silahkan download dulu git bash. Untuk caranya silahkan rujuk di mesin pencarian.
+
 Selamat berkode-kode ria. Sukses selalu bagi Anda yang ingin menambahkan keahlian baru.
-Jangan Lupa untuk memulai dengan bacaan basmalah.
+
+Jangan Lupa untuk memulai dengan bacaan basmalah :palms_up_together: .
 Wassalam.
