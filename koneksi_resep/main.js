@@ -1,5 +1,6 @@
 "use strict";
 
-const kotaKota = require("cities");
-var kotaKu = kotaKota.zipLookup("10016");
-console.log(kotaKu);
+const modulPenambahan = require("./penambahan");
+let a = 1
+let b = 2
+console.log(modulPenambahan.jumlahkanAngka(a, b));
