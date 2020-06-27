@@ -1,0 +1,11 @@
+{
+  "name": "koneksi_resep",
+  "version": "1.0.0",
+  "description": "Sebuah aplikasi untuk berbagi resep masakan",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Beny Hasanudin",
+  "license": "ISC"
+}
