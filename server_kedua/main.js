@@ -8,6 +8,9 @@ app.on("request", (req, res)=>{
 	res.writeHead(statusHttp.OK,{
 	  "Content-Type":"text/html",
 	});
+	console.log(req.method);
+	console.log(req.url);
+	console.log(req.headers);
 	let pesanTanggapan = "<h1>Ini akan tampil pada layar.</h1>";
 	res.end(pesanTanggapan);
 });// app.on method ends.
