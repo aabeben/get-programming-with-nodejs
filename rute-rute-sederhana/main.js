@@ -14,7 +14,8 @@ const port = 3000,
 			"Content-Type":"text/html",
 		});
 		if(petaRuteTanggapan[req.url]){
-			res.end(petaRuteTanggapan[req.url]);
+			setTimeout(()=>res.end(petaRuteTanggapan[req.url]),2000);
+			
 		} else {
 			res.end("<h1>Selamat Datang!</h1>");
 		}
