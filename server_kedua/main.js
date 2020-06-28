@@ -9,6 +9,7 @@ app.on("request", (req, res)=>{
 	  "Content-Type":"text/html",
 	});
 	let pesanTanggapan = "<h1>Ini akan tampil pada layar.</h1>";
+	res.end(pesanTanggapan);
 });// app.on method ends.
 
 app.listen(port);
