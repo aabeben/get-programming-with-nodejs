@@ -12,5 +12,5 @@ logika kode untuk mencocokkan permintaan-permintaan dengan tanggapan-tanggapan y
 
 Pelajaran ke-5 ini melingkupi
 - Mengumpulkan dan memproses data permintaan
-- Menyerahkan sebuah permintaan POST menggunakan perintah ``curl
+- Menyerahkan sebuah permintaan POST menggunakan perintah ```curl
 - Membangun sebuah aplikasi web dengan rute sederhana
