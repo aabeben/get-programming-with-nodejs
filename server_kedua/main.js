@@ -6,6 +6,12 @@ const port = 3000,
 	app = http.createServer();
 
 app.on("request", (req, res)=>{
+	var badan = [];
+	req.on("data",(dataBadan)=> badan.push(dataBadan));
+	req.on("end",()=>{
+		badan = Buffer.concat(badan).toString();
+		console.log(`Isi-isi dari badan permintaan: ${badan}`);
+	});
 	res.writeHead(statusHttp.OK,{
 	  "Content-Type":"text/html",
 	});
