@@ -1,4 +1,5 @@
 "use strict";
+const getJSONString = obj => JSON.stringify(obj, null, 2);
 const port = 3000,
 	http = require("http"),
 	statusHttp = require("http-status-codes"),
@@ -8,9 +9,9 @@ app.on("request", (req, res)=>{
 	res.writeHead(statusHttp.OK,{
 	  "Content-Type":"text/html",
 	});
-	console.log(req.method);
-	console.log(req.url);
-	console.log(req.headers);
+	console.log(`Method: ${getJSONString(req.method)}`);
+	console.log(`URL: ${getJSONString(req.url)}`);
+	console.log(`Headers: ${getJSONString(req.headers)}`);
 	let pesanTanggapan = "<h1>Ini akan tampil pada layar.</h1>";
 	res.end(pesanTanggapan);
 });// app.on method ends.
