@@ -1,0 +1,14 @@
+{
+  "name": "server_kedua",
+  "version": "1.0.0",
+  "description": "Kerjakan ulang kode server anda",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Beny Hasanudin",
+  "license": "ISC",
+  "devDependencies": {
+    "http-status-codes": "^1.4.0"
+  }
+}
