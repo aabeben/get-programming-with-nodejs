@@ -1,20 +1,28 @@
 "use strict";
-const petaRuteTanggapan = {
-	"/info":"<h1>Halaman Info</h1>",
-	"/kontak":"<h1>Halaman Kontak</h1>",
-	"/tentang":"<h1>Halaman Tentang Kami</h1>",
-	"/salam":"<h1>Halaman Salam</h1>",
-	"/galat":"<h1>Maaf halaman yang anda cari tidak ada di sini.</h1>",
-};
 const port = 3000,
 	http = require("http"),
 	statusHttp = require("http-status-codes"),
+        petaRuteTanggapan = {
+	"/info":"<h1>Halaman Info</h1>",
+	"/kontak":"<h1>Halaman Kontak</h1>",
+	"/tentang":"<h1>Pelajari lebih lanjut tentang kami.</h1>",
+	"/salam":"<h1>Katakan salam dengan mengirimi surel <a href=\"mailto:bhasanudin@gmail.com\">di sini</a></h1>",
+	"/galat":`${statusHttp.NOT_FOUND} Maaf halaman yang anda cari tidak ada di sini`,
+},
+
 	app = http.createServer((req, res)=>{
-		res.writeHead(200, {
-			"Content-Type":"text/html",
-		});
 		if(petaRuteTanggapan[req.url]){
-			setTimeout(()=>res.end(petaRuteTanggapan[req.url]),2000);
+			if(req.url === "/galat"){
+				res.writeHead(404, {
+				  "Content-Type":"text",
+				});
+			} else {
+				res.writeHead(200, {
+					"Content-Type":"text/html",
+				});
+
+			}
+			res.end(petaRuteTanggapan[req.url]);
 			
 		} else {
 			res.end("<h1>Selamat Datang!</h1>");
